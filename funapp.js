@@ -172,5 +172,7 @@ const checkIfNameExists = (name, friends) => {
    })
    
    return marker;
-   
+
+
+}
    
