@@ -1,4 +1,4 @@
- const friends = [ 
+const friends = [ 
      { text: "Onwura Tochukwu", emoji: "(TV📺)" },
      { text: "Ezenwa Vitalis", emoji: "(isi Bread 🍞)" },
      { text: "Ezenwa Kingsley", emoji: "(Mkpo Anuru)" },
@@ -23,16 +23,16 @@
      { text: "Ezenwa Ogochukwu", emoji: "(ohi okuko🐓)" },
      { text: "Onyeiwu Uchenna", emoji: "(Otu ogbo)" },
      { text: "Ezenwatu Chinyere", emoji: "👩‍⚕️" }, 
-     { text: "Faustina Merenini", emoji: "(Ndi Otu Ogbo)" }, 
+     { text: "Faustina Merenini", emoji: "(Ndi otu ogbo)" }, 
      { text: "Ikeme Modestus", emoji: "(Onu utu Ezi🐷)" },
      { text: "Ngozi Emeghiebo", emoji: "(Nwa Teacher)" },
      { text: "Adilaba Ogochukwu", emoji: "🙋‍♀️" },
-     { text: "Nnajiofor Kelechukwu", emoji: "Ndi Otu Ogbo" },
+     { text: "Nnajiofor Kelechukwu", emoji: "(Ndi otu ogbo)" },
      { text: "Okechukwu Ibe", emoji: "🤴" }, 
      { text: "Nwafor Ijeoma", emoji: " 👩‍🦳" },
      { text: "Olivia Ucheonye", emoji: "👸" },
      { text: "Okrika Goddess", emoji: "(tuza queen)" },
-     { text: "Okpala Chioma", emoji: "👨" }, 
+     { text: "Anakebe Ndidiamaka", emoji: "👩" }, 
      { text: "Ogechukwu Cynthia", emoji: "🕵️‍♀️" }, 
      { text: "Oluchi Nwaozuzu", emoji: "👮‍♀️" },
      { text: "Stella Akuagba", emoji: "👧" },
@@ -49,17 +49,17 @@
      { text: "Ndidi Amaka", emoji: "👩‍🦰" }, 
      { text: "Perpetual", emoji: "👩‍🦱" }, 
      { text: "Joe Vian", emoji: "👮‍♀️" },
-     { text: "Baruwa", emoji: "👧" },
+     { text: "Nkemakolam Obiejesi", emoji: "(Baruwa)" },
      { text: "Chiemaka Ibe", emoji: "(gentle)" },
      { text: "Ogechukwu Okolocha", emoji: "(black queen)" },
      { text: "Izuchuku Ukaefu", emoji: "(Vuga)" },
      { text: "Abgasonye Jude", emoji: "🧔" }, 
-     { text: "Iheanacho", emoji: "👩‍🦱" }, 
+     { text: "Iheanacho Oz", emoji: "👩‍🦱" }, 
      { text: "Olemba Chinonye", emoji: "👮‍♀️" },
      { text: "Chioma Nwaosu", emoji: "👧" },
      { text: "Chioma Akasiugwu", emoji: "👸" },
      { text: "Chioma Okoye", emoji: "(Queen)" },
-     { text: "Chioma", emoji: "👩‍🦳" },
+     { text: "Olivia  Ogechukwu", emoji: "(Miss Mater👩‍🦳)" },
      { text: "Eziefula Charles", emoji: "(Charles pimple)" }, 
      { text: "Adorable Franca", emoji: "(Nwa Jesu)" }, 
      { text: "Olemba Chinonye", emoji: "👼" },
@@ -69,10 +69,20 @@
      { text: "Chioma Aguleri", emoji: "👩‍🦳" } ,
      { text: "Enemchukwu Nnamdi", emoji: "(Osama👼💔)" }, 
      { text: "Ihesineke Anurika", emoji: "👧" },
-     { text: "Ihesineke Chukwudi", emoji: "Payment👮‍♀️" },
-     { text: "Ugochukwu Okafor", emoji: "TELEVI📺" },
+     { text: "Ihesineke Chukwudi", emoji: "(Payment👮‍♀️)" },
+     { text: "Ugochukwu Okafor", emoji: "(TELEVI📺)" },
      { text: "Mazi Ubochi", emoji: "👮‍♀️" },
-     { text: "Marylovina Aguma", emoji: "sisi" },
+     { text: "Ojobo Joseph", emoji: "(Pastor)" }, 
+     { text: "Ojike Ogechi", emoji: "👧" },
+     { text: "Anekwe Ifeoma", emoji: "👩" },
+     { text: "James Ogbonna", emoji: "(Agba Baller)" },
+     { text: "JohnKenedy Ogbonna", emoji: "(Bishop)" },
+     { text: "Obioma Okpalakunne", emoji: "👩" },
+     { text: "Mbionwu Vivian", emoji: "👧" },
+     { text: "Ohazurume Ijeoma", emoji: "(Philomina)" },
+     { text: "Obiako Chinedu", emoji: "🧑" },
+     { text: "Ebere Nwosu", emoji: "👨" },
+
     ]; 
 
 
@@ -90,7 +100,7 @@ const teachers = [
      { text: "Sir Economics", emoji: "👳‍♂️" },
     ];
     
-    
+    let numberclick = 0;
     
 
 
@@ -113,10 +123,13 @@ function checkVibe() {
     let randomVibe1 = randomVibeText + " " + randomVibeEmoji;
     const resultDiv = document.getElementById('result');
     let maroon = document.getElementById('audio');
+    let numberclickdis = document.getElementById('numberclick');
 
     resultDiv.textContent = `${name}, have you checked on ${randomVibe1}. Be your brother's keeper. Also remember  ${randomTeachers1}`;
     resultDiv.style.display = 'block'; 
     resultDiv.style.animation = 'pop 0.5s ease'
+    numberclick++;
+    numberclickdis.textContent = `${name}, you checked on ${numberclick} classmate(s)`;
     
  maroon.play(); 
 }
