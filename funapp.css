@@ -1,7 +1,7 @@
 body { 
     font-family: 'Arial', sans-serif;
     overflow: visible;
-    background: linear-gradient(135deg, #6d98f5, #fad0c4); 
+    background: linear-gradient(135deg, #185ae9, #ee977f); 
     margin: 0; 
     padding: 0;
     display: flex; 
@@ -15,7 +15,9 @@ body {
  h1 {
     font-size: 1.9rem; 
     margin-bottom: 20px; 
-    text-align: center; 
+    text-align: center;
+    color: #fff;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 button { 
@@ -59,10 +61,10 @@ button:hover {
 
 #name{
     color: #ebebf1;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     width: 50%;
-    background-color: #8983c0;
+    background-color: #f5f4f8;
     border-radius: 6px;
     padding: 8px;
   
@@ -149,4 +151,8 @@ img:hover {
         padding: 5px;
         box-shadow: none;
     }
+}
+
+#numberclick{
+    color: aqua;
 }
