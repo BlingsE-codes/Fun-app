@@ -72,6 +72,7 @@
      { text: "Ihesineke Chukwudi", emoji: "Payment👮‍♀️" },
      { text: "Ugochukwu Okafor", emoji: "TELEVI📺" },
      { text: "Mazi Ubochi", emoji: "👮‍♀️" },
+     { text: "Marylovina Aguma", emoji: "sisi" },
     ]; 
 
 
