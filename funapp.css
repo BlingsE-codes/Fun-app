@@ -29,7 +29,7 @@ button {
     border-radius: 30px; 
     cursor: pointer;
     transition: transform 0.2s; 
-    margin-top: 20px; 
+    margin-top: 10px; 
 }
 
 button:hover { 
@@ -37,14 +37,15 @@ button:hover {
 } 
 .result { 
     background-color: white; 
-    padding: 30px; 
+    padding: 16px; 
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
-    margin-top: 30px; 
+    margin-top: 10px; 
     text-align: center; display: none; 
+    font-size: 16px;
     animation: pop 0.5s ease; } 
 .vibe-text { 
-    font-size: 1.8rem; 
+    font-size: 0.8rem; 
     margin-bottom: 10px; 
 }
 
@@ -99,6 +100,12 @@ P{
 }
 #p2{
     margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
 }
 @media screen and (max-width: 630px) {
     body {
