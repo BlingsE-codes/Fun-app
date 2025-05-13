@@ -1,9 +1,6 @@
 const form = document.querySelector('#form');
 
-form.addEventListener('submit', function (event) {
-   event.preventDefault();
-   checkVibe();
-})
+
 
 
 const friends = [
