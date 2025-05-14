@@ -1,6 +1,9 @@
 const form = document.querySelector('#form');
 
-
+form.addEventListener('submit', function (event) {
+   event.preventDefault();
+   checkVibe();
+})
 
 
 const friends = [
@@ -66,7 +69,7 @@ const friends = [
    { text: "Chioma Okoye", emoji: "(Queen)" },
    { text: "Olivia  Ogechukwu", emoji: "(Miss Mater👩‍🦳)" },
    { text: "Eziefula Charles", emoji: "(Charles pimple)" },
-   { text: "Adorable Franca", emoji: "(Nwa Jesu)" },
+   { text: "Fransisca Obiora Adorable", emoji: "(Adorable Franca)" },
    { text: "Olemba Chinonye", emoji: "👼" },
    { text: "Chioma Nwaosu", emoji: "👧" },
    { text: "Chinonso Umeoka", emoji: "👮‍♀️" },
@@ -87,6 +90,11 @@ const friends = [
    { text: "Ohazurume Ijeoma", emoji: "(Philomina)" },
    { text: "Obiako Chinedu", emoji: "🧑" },
    { text: "Ebere Nwosu", emoji: "👨" },
+   { text: "Ifeanyi Ogbuokiri", emoji: "👱‍♂️" },
+   { text: "Osigwe Vincent", emoji: "👨" },
+   { text: "Ifeanyi Ogbuokiri", emoji: "👱‍♂️" },
+
+
 
 ];
 
@@ -172,7 +180,7 @@ const checkIfNameExists = (name, friends) => {
    })
    
    return marker;
-
+   
+   
 
 }
-   
