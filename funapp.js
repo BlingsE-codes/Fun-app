@@ -98,6 +98,7 @@ const friends = [
    { text: "Nkeonyere Onyejeke", emoji: "👧" },
    { text: "Obiako Chinedu", emoji: "👨" },
    { text: "Agbaeze Ijeoma", emoji: "I.J" },
+   { text: "Anthony Ikeji", emoji: "Sopi" },
 
 
 
