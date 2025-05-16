@@ -1,4 +1,6 @@
 const form = document.querySelector('#form');
+let emojii = document.querySelector('vibeEmoji');
+
 
 
 
@@ -42,7 +44,7 @@ const friends = [
    { text: "Oluchi Nwaozuzu", emoji: "👮‍♀️" },
    { text: "Stella Akuagba", emoji: "👧" },
    { text: "Timothy Edeh", emoji: " (gentle)" },
-   { text: "Malvis Xtopher", emoji: "👼" },
+   { text: "Amarachi Anya", emoji: "Malvis Xtopher👼" },
    { text: "Onyi Udoka", emoji: "👧" },
    { text: "Okanu Tochukwu", emoji: "(Afo ka Otele)" },
    { text: "Peter Gbajie", emoji: "(Odi nmanu🛢) " },
@@ -64,7 +66,7 @@ const friends = [
    { text: "Chioma Nwaosu", emoji: "👧" },
    { text: "Chioma Akasiugwu", emoji: "👸" },
    { text: "Chioma Okoye", emoji: "(Queen)" },
-   { text: "Olivia  Ogechukwu", emoji: "(Miss Mater👩‍🦳)" },
+   { text: "Olivia  Ogechukwu Ugochukwu", emoji: "(Miss Mater👩‍🦳)" },
    { text: "Eziefula Charles", emoji: "(Charles pimple)" },
    { text: "Adorable Franca", emoji: "(Nwa Jesu)" },
    { text: "Olemba Chinonye", emoji: "👼" },
@@ -72,7 +74,7 @@ const friends = [
    { text: "Chinonso Umeoka", emoji: "👮‍♀️" },
    { text: "Lilian Izuwa", emoji: "👩‍🦰" },
    { text: "Chioma Aguleri", emoji: "👩‍🦳" },
-   { text: "Enemchukwu Nnamdi", emoji: "(Osama👼💔)" },
+   { text: ", i mean remembered Late Enemchukwu Nnamdi", emoji: "(Osama was here👼💔)" },
    { text: "Ihesineke Anurika", emoji: "👧" },
    { text: "Ihesineke Chukwudi", emoji: "(Payment👮‍♀️)" },
    { text: "Ugochukwu Okafor", emoji: "(TELEVI📺)" },
@@ -87,9 +89,17 @@ const friends = [
    { text: "Ohazurume Ijeoma", emoji: "(Philomina)" },
    { text: "Obiako Chinedu", emoji: "🧑" },
    { text: "Ebere Nwosu", emoji: "👨" },
-   { text: "Marylovina Aguma Njideka", emoji: "👧" },
+   { text: "Marylovina Aguma Njideka", emoji: "Marylovins👧" },
    { text: "Osigwe Vincent", emoji: "👨" },
    { text: "Ifeanyi Ogbuokiri", emoji: "👱‍♂️" },
+   { text: ", i mean remembered Late Ikechukwu Otogboro", emoji: "(RIP Ottos)" },
+   { text: ", i mean remembered Late Samuel Iloegbu", emoji: "(RIP Samuel)" },
+   { text: "Chijioke Udeozor", emoji: "👨" },
+   { text: "Nkeonyere Onyejeke", emoji: "👧" },
+   { text: "Obiako Chinedu", emoji: "👨" },
+   { text: "Agbaeze Ijeoma", emoji: "I.J" },
+
+
 
 
 ];
@@ -115,18 +125,18 @@ let numberclick = 0;
 
 function checkVibe() {
    const name = document.getElementById('name').value;
+   const resultDiv = document.getElementById('result');
 
 
-
-   if (name == "") {
-      resultDiv.textContent = "Please enter a name";
+   if (name === "") {
+      resultDiv.textContent = "Please enter your name, surname or A.K.A";
    }
    else if (name && !checkIfNameExists(name, friends)) {
 
       
-      const resultDiv = document.getElementById('result');
+      
 
-      resultDiv.textContent = `You do not seem to be a member of our class.`;
+      resultDiv.textContent = `You do not seem to be a member of our class(2002/03).`;
       resultDiv.style.display = 'block';
       resultDiv.style.animation = 'pop 0.5s ease'
       resultDiv.style.backgroundColor = 'red'
@@ -154,7 +164,7 @@ function checkVibe() {
       resultDiv.style.color = 'black'
       resultDiv.style.animation = 'pop 0.5s ease'
       numberclick++;
-      numberclickdis.textContent = `${name}, you checked on ${numberclick} classmate(s)`;
+      numberclickdis.textContent = `You checked on ${numberclick} classmate(s) ${randomVibeEmoji}`;
 
       maroon.play();
 
